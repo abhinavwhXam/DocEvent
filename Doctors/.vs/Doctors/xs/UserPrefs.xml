@@ -1,0 +1,98 @@
+﻿<Properties StartupConfiguration="{D0675463-53BE-4C66-A0DC-1940C30A884F}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Doctors/Doctors/Views/Registeration/PasswordLoginPage.xaml">
+    <Files>
+      <File FileName="Doctors/Doctors/Views/Registeration/LoginPage.xaml.cs" Line="20" Column="44" />
+      <File FileName="Doctors/Doctors/ViewModels/LoginViewModel.cs" Line="25" Column="1" />
+      <File FileName="Doctors/Doctors/App.xaml.cs" Line="18" Column="44" />
+      <File FileName="Doctors/Doctors/Views/SplashScreenPage.xaml.cs" Line="34" Column="57" />
+      <File FileName="Doctors/Doctors/Views/Registeration/LoginPage.xaml" Line="14" Column="71" />
+      <File FileName="Doctors/Doctors/Views/Registeration/PasswordLoginPage.xaml" Line="21" Column="54" />
+      <File FileName="Doctors/Doctors/Views/DashBoardPage.xaml" Line="170" Column="63" />
+      <File FileName="Doctors/Doctors/Views/DashBoardPage.xaml.cs" />
+      <File FileName="Doctors/Doctors.Android/MainActivity.cs" Line="28" Column="1" />
+      <File FileName="Doctors/Doctors.iOS/AppDelegate.cs" />
+      <File FileName="Doctors/Doctors/Views/Templates/HamburgerHeaderView.xaml" />
+      <File FileName="Doctors/Doctors/Views/Registeration/PasswordLoginPage.xaml.cs" Line="20" Column="53" />
+      <File FileName="Doctors/Doctors/ViewModels/PasswordLoginPageViewModel.cs" Line="28" Column="19" />
+      <File FileName="Doctors/Doctors/ViewModels/DashBoaardViewModels.cs" />
+      <File FileName="Doctors/Doctors/AppShell.xaml" Line="15" Column="33" />
+      <File FileName="Doctors/Doctors/AppShell.xaml.cs" Line="8" Column="34" />
+      <File FileName="Doctors/Doctors/Views/NewItemPage.xaml" />
+      <File FileName="Doctors/Doctors/Views/MyPage.xaml" Line="8" Column="82" />
+      <File FileName="Doctors/Doctors/Views/MyPage.xaml.cs" Line="14" Column="57" />
+      <File FileName="../../.nuget/packages/com.airbnb.xamarin.forms.lottie/3.1.2/readme.txt" Line="1" Column="1" />
+      <File FileName="../../.nuget/packages/com.airbnb.xamarin.forms.lottie/2.6.1/readme.txt" />
+      <File FileName="Doctors/Doctors/Views/ItemDetailPage.xaml" />
+      <File FileName="Doctors/Doctors/App.xaml" Line="9" Column="40" />
+      <File FileName="Doctors/Doctors/Views/NewItemPage.xaml.cs" />
+      <File FileName="Doctors/Doctors/Views/ItemsPage.xaml" Line="10" Column="27" />
+      <File FileName="../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/iOS/Xamarin.iOS.Common.targets" />
+      <File FileName="Doctors/Doctors/Views/AboutPage.xaml" />
+      <File FileName="Doctors/Doctors/NewShell.xaml" Line="5" Column="65" />
+      <File FileName="Doctors/Doctors/NewShell.xaml.cs" Line="10" Column="16" />
+      <File FileName="Doctors/Doctors/Views/MyPage2.xaml" />
+      <File FileName="Doctors/Doctors/Views/MyPage2.xaml.cs" />
+      <File FileName="Doctors/Doctors/Views/ItemsPage.xaml.cs" Line="27" Column="13" />
+      <File FileName="../../.nuget/packages/com.airbnb.xamarin.forms.lottie/3.0.0/readme.txt" Line="1" Column="1" />
+      <File FileName="Doctors/Doctors/Views/AccountView.xaml" Line="69" Column="1" />
+      <File FileName="Doctors/Doctors/Views/AccountView.xaml.cs" Line="1" Column="1" />
+      <File FileName="Doctors/Doctors/Models/LoginModel.cs" Line="16" Column="44" />
+      <File FileName="Doctors/Doctors/Utility/UserControl/LoaderAnimation.xaml" Line="27" Column="62" />
+      <File FileName="Doctors/Doctors.Android/CustomRenderes/MyEntryRenderer.cs" Line="1" Column="1" />
+      <File FileName="Doctors/Doctors.iOS/CustomRenderer/MyEntryRenderer.cs" Line="23" Column="7" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Doctors" expanded="True">
+            <Node name="Doctors" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Utility" expanded="True">
+                <Node name="Controls" expanded="True" />
+                <Node name="UserControl" expanded="True" />
+              </Node>
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Registeration" expanded="True">
+                  <Node name="LoginPage.xaml" expanded="True" />
+                  <Node name="PasswordLoginPage.xaml" expanded="True" selected="True" />
+                </Node>
+                <Node name="Templates" expanded="True" />
+                <Node name="AccountView.xaml" expanded="True" />
+                <Node name="DashBoardPage.xaml" expanded="True" />
+                <Node name="ItemsPage.xaml" expanded="True" />
+                <Node name="MyPage.xaml" expanded="True" />
+                <Node name="MyPage2.xaml" expanded="True" />
+                <Node name="NewItemPage.xaml" expanded="True" />
+                <Node name="SplashScreenPage.xaml" expanded="True" />
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+              <Node name="AppShell.xaml" expanded="True" />
+              <Node name="NewShell.xaml" expanded="True" />
+            </Node>
+            <Node name="Doctors.Android" expanded="True">
+              <Node name="Packages" expanded="True" />
+              <Node name="CustomRenderes" expanded="True" />
+              <Node name="Resources" expanded="True" />
+            </Node>
+            <Node name="Doctors.iOS" expanded="True">
+              <Node name="CustomRenderer" expanded="True" />
+              <Node name="Resources" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Doctors.Android PreferredExecutionTarget="Android.pixel_3_xl_pie_9_0_-_api_28" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.ItemProperties.Doctors.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.B2C29F30-CE6D-49F5-95AA-A863CC85A66F" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

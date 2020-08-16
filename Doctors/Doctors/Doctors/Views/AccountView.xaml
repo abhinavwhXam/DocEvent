@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" Title="Account"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Entry="clr-namespace:Doctors.Utility.Controls"
+             xmlns:temp ="clr-namespace:Doctors.Views.Templates" Shell.ForegroundColor="White"
+             Shell.BackgroundColor="{StaticResource NavigationPrimary}"
+            Shell.TitleColor="White" x:Class="Doctors.Views.AccountView">
+    <ContentPage.Content>
+        <Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".4*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid BackgroundColor="{StaticResource NavigationPrimary}">
+                     <temp:HamburgerHeaderView VerticalOptions="Center" HorizontalOptions="Center"/>
+                </Grid>
+                <Grid Grid.Row="1"> 
+                    <StackLayout Spacing="20">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width=".35*"/>
+                                 <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Name:" Grid.Column="0" TextColor="Gray" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center"/>
+                             <Entry:MyEntry BorderColor="Green" Grid.Column="1"  IsPassword="False" FontSize="15" TextColor="Black" Placeholder="Enter Name"  HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="10,0,10,0"/>
+                        </Grid>
+                         <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width=".35*"/>
+                                 <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Mobile:" Grid.Column="0" TextColor="Gray" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center"/>
+                             <Entry:MyEntry BorderColor="Green" Grid.Column="1"  IsPassword="False" FontSize="15" TextColor="Black" Placeholder="Enter Name"  HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="10,0,10,0"/>
+                        </Grid>
+                         <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width=".35*"/>
+                                 <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Clinic Address:" Grid.Column="0" TextColor="Gray" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center"/>
+                             <Entry:MyEntry BorderColor="Green" Grid.Column="1"  IsPassword="False" FontSize="15" TextColor="Black" Placeholder="Enter Name"  HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="10,0,10,0"/>
+                        </Grid>
+                         <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width=".35*"/>
+                                 <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Qualification:" Grid.Column="0" TextColor="Gray" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center"/>
+                             <Entry:MyEntry BorderColor="Green" Grid.Column="1"  IsPassword="False" FontSize="15" TextColor="Black" Placeholder="Enter Name"  HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="10,0,10,0"/>
+                        </Grid>
+                         <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width=".35*"/>
+                                 <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Name:" Grid.Column="0" TextColor="Gray" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center"/>
+                             <Entry:MyEntry BorderColor="Green" Grid.Column="1"  IsPassword="False" FontSize="15" TextColor="Black" Placeholder="Enter Name"  HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="10,0,10,0"/>
+                        </Grid>
+                    </StackLayout>
+                    <Grid>
+                        <Button BackgroundColor="Transparent" TextColor="Red" Text="LOGOUT" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Center"/>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

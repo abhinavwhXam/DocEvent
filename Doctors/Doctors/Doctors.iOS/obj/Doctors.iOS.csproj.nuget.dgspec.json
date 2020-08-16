@@ -1,0 +1,136 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/macbookproa1398/Downloads/Doctors/Doctors/Doctors.iOS/Doctors.iOS.csproj": {}
+  },
+  "projects": {
+    "/Users/macbookproa1398/Downloads/Doctors/Doctors/Doctors.iOS/Doctors.iOS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/macbookproa1398/Downloads/Doctors/Doctors/Doctors.iOS/Doctors.iOS.csproj",
+        "projectName": "Doctors.iOS",
+        "projectPath": "/Users/macbookproa1398/Downloads/Doctors/Doctors/Doctors.iOS/Doctors.iOS.csproj",
+        "packagesPath": "/Users/macbookproa1398/.nuget/packages/",
+        "outputPath": "/Users/macbookproa1398/Downloads/Doctors/Doctors/Doctors.iOS/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/macbookproa1398/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "xamarinios10"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "xamarinios10": {
+            "projectReferences": {
+              "/Users/macbookproa1398/Downloads/Doctors/Doctors/Doctors/Doctors.csproj": {
+                "projectPath": "/Users/macbookproa1398/Downloads/Doctors/Doctors/Doctors/Doctors.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "dependencies": {
+            "Com.Airbnb.Xamarin.Forms.Lottie": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.5.3.2, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.8.0.1269, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "/Users/macbookproa1398/Downloads/Doctors/Doctors/Doctors/Doctors.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/macbookproa1398/Downloads/Doctors/Doctors/Doctors/Doctors.csproj",
+        "projectName": "Doctors",
+        "projectPath": "/Users/macbookproa1398/Downloads/Doctors/Doctors/Doctors/Doctors.csproj",
+        "packagesPath": "/Users/macbookproa1398/.nuget/packages/",
+        "outputPath": "/Users/macbookproa1398/Downloads/Doctors/Doctors/Doctors/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/macbookproa1398/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Com.Airbnb.Xamarin.Forms.Lottie": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Syncfusion.Xamarin.SfNavigationDrawer": {
+              "target": "Package",
+              "version": "[18.2.0.48, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.5.3.2, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.8.0.1269, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

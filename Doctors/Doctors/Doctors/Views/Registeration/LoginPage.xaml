@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+              xmlns:Loader="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             xmlns:Entry="clr-namespace:Doctors.Utility.Controls"
+             
+             xmlns:Laoding="clr-namespace:Doctors.Utility.UserControl"
+             
+             x:Class="Doctors.Views.Registeration.LoginPage">
+    <ContentPage.Content>
+        <Entry:GradientColorStack StartColor="White" EndColor="White">
+        <Grid>
+           
+
+            <Grid RowSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".3*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height=".3*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width=".03*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width=".03*"/>
+                </Grid.ColumnDefinitions>
+                    <Image Grid.Row="0" Grid.Column="1"  Source="Ciplalogo.png" HeightRequest="35"  Margin="0,10,10,0" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    <Frame Grid.Row="1" Grid.Column="1" BackgroundColor="White" Padding="0"  CornerRadius="10" HasShadow="False" VerticalOptions="Center" HorizontalOptions="FillAndExpand" >
+                    <Grid>   
+                <StackLayout Spacing="10" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Orientation="Vertical">
+                        <Label Text="REGISTER" FontAttributes="Bold" TextColor="{StaticResource NavigationPrimary}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="27" Margin="0,15,0,15"/>
+
+
+                            <StackLayout Margin="10,0,10,0" Orientation="Horizontal" Padding="0">
+                                <Image Source="EventCodeIcon.png" HeightRequest="25" WidthRequest="25" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                <Entry:MyEntry BorderColor="Green" Focused="Code_Focused" IsPassword="True" FontSize="15" Unfocused="code_Unfocused" TextColor="Black" Placeholder="Enter Code"  HorizontalOptions="FillAndExpand" VerticalOptions="Start" Margin="10,0,10,0"/>
+                            </StackLayout>
+                            <BoxView x:Name="CodeBox" BackgroundColor="Gray" HeightRequest="1" HorizontalOptions="FillAndExpand" Margin="10,0,10,0"/>
+                            <StackLayout Margin="10,0,10,0" Orientation="Horizontal" Padding="0">
+                                <Image Source="NameIcon.png" HeightRequest="25" WidthRequest="25" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                <Entry:MyEntry BorderColor="Green" FontSize="15" Focused="MyEntry_Focused" Unfocused="MyEntry_Unfocused" TextColor="Black" Placeholder="Enter Name"  HorizontalOptions="FillAndExpand" VerticalOptions="Start" Margin="10,0,10,0"/>
+                            </StackLayout>
+                            <BoxView x:Name="NameBox" BackgroundColor="Gray" HeightRequest="1" HorizontalOptions="FillAndExpand"  Margin="10,0,10,0"/>
+                            <StackLayout Margin="10,0,10,0" Orientation="Horizontal" Padding="0">
+                                <Image Source="POPIcon.png" HeightRequest="25" WidthRequest="25" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                <Entry:MyEntry BorderColor="Green" FontSize="15" Focused="Place_Focused" Unfocused="Place_Unfoccused" TextColor="Black" Placeholder="Place of Practice"  HorizontalOptions="FillAndExpand" VerticalOptions="Start" Margin="10,0,10,0"/>
+                            </StackLayout>
+                            <BoxView x:Name="PlaceBox" BackgroundColor="Gray" HeightRequest="1" HorizontalOptions="FillAndExpand"  Margin="10,0,10,0"/>
+
+                            <StackLayout Margin="10,0,10,0" Orientation="Horizontal" Padding="0">
+                                <Image Source="MobileIcon.png" HeightRequest="25" WidthRequest="25" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                <Entry:MyEntry BorderColor="Green" FontSize="15" Focused="Phone_Focused" Unfocused="Phone_UnFocused" TextColor="Black" Placeholder="Enter Mobile"  HorizontalOptions="FillAndExpand" VerticalOptions="Start" Margin="10,0,10,0"/>
+                            </StackLayout>
+                            <BoxView x:Name="PhoneBox" BackgroundColor="Gray" HeightRequest="1" HorizontalOptions="FillAndExpand"  Margin="10,0,10,0"/>
+
+                            <StackLayout Margin="10,0,10,0" Orientation="Horizontal" Padding="0">
+                                <Image Source="EmailIcon.png" HeightRequest="25" WidthRequest="25" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                <Entry:MyEntry BorderColor="Green" FontSize="15" Focused="Email_Focussed" Unfocused="Email_UNfocced"  TextColor="Black" Placeholder="Enter Email"  HorizontalOptions="FillAndExpand" VerticalOptions="Start" Margin="10,0,10,0"/>
+                            </StackLayout>
+                            <BoxView x:Name="EmailBox" BackgroundColor="Gray" HeightRequest="1" HorizontalOptions="FillAndExpand" Margin="10,0,10,0"/>
+
+
+                            <Button IsVisible="False" TextColor="{StaticResource NavigationPrimary}" Text="Forgot Password?" BackgroundColor="White" HorizontalOptions="End"/>
+                            <Button Margin="0,20,0,20" Command="{Binding LoginCOmmand}" VerticalOptions="End" WidthRequest="100" HorizontalOptions="Center" BackgroundColor="{StaticResource NavigationPrimary}" Text="Register" TextColor="White" BorderColor="{StaticResource NavigationPrimary}" CornerRadius="10"/>
+                        </StackLayout>
+                       
+                    </Grid>
+                </Frame>
+
+                <Grid VerticalOptions="Center"  Grid.Row="2" Grid.Column="1" >
+                    <StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center" Spacing="10">
+                            <Label Text="Have an Account?" TextColor="{StaticResource NavigationPrimary}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="12"/>
+                            <Label Text="LOGIN" FontAttributes="Bold" TextColor="{StaticResource NavigationPrimary}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="18">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding MoveToSignIn}"/>
+                                </Label.GestureRecognizers>
+                            </Label>
+
+                    </StackLayout>
+                    </Grid>
+                
+                
+            </Grid>
+                <Laoding:LoaderAnimation IsVisible="{Binding IsBusy,Mode=TwoWay}">
+                    <x:Arguments>
+                        <x:String>Registering..Please wait!</x:String>
+                        
+                    </x:Arguments>
+                </Laoding:LoaderAnimation>
+
+
+
+
+
+            </Grid>
+        </Entry:GradientColorStack>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Doctors.Views.HamburgerMenu.HeaderView">
+  <ContentView.Content>
+        <Grid BackgroundColor="{StaticResource NavigationPrimary}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Frame BackgroundColor="White" HeightRequest="40" WidthRequest="40" CornerRadius="40" Grid.Column="0"/>
+
+            <StackLayout Grid.Row="1" VerticalOptions="Center" Orientation="Vertical">
+                <Label Text="Dr. Abhinav wahi" TextColor="White" FontSize="20" />
+                <Label Text="Delhi" TextColor="White" FontSize="20" />
+            </StackLayout>
+        </Grid>
+  </ContentView.Content>
+</ContentView>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             Title="Home"
+              xmlns:Laoding="clr-namespace:Doctors.Utility.UserControl"
+                xmlns:Loader="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+               xmlns:Entry="clr-namespace:Doctors.Utility.Controls"
+             xmlns:temp ="clr-namespace:Doctors.Views.Templates"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Name="home" x:Class="Doctors.Views.MyPage">
+    <ContentPage.Content>
+        <CollectionView Margin="10,10,10,0"    SelectionMode="None" ItemsSource="{Binding DashBoardListCol,Mode=TwoWay}" VerticalOptions="Start" HorizontalOptions="FillAndExpand">
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid  Margin="10,5,10,5" HeightRequest="180">
+
+                                            <Frame  VerticalOptions="FillAndExpand" Padding="5" Margin="10,5,10,5" BorderColor="LightGray" HorizontalOptions="FillAndExpand">
+                                                
+                                                <Grid>
+                                                    <Grid.GestureRecognizers>
+                                                        <TapGestureRecognizer Command="{Binding Source={x:Reference home}, Path=BindingContext.CategoryCOmmand}" CommandParameter="{Binding Title}"/>
+                                                    </Grid.GestureRecognizers>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width=".8*"/>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+                                                <Loader:AnimationView x:Name="AnimationView"
+                                                                      Grid.Column="0"
+                         Animation="{Binding Icon}"
+                         Loop="True"
+                         AutoPlay="True" 
+                              >
+
+
+                                                </Loader:AnimationView>
+                                                    <Grid Grid.Column="1">
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="Auto"/>
+                                                            <RowDefinition Height="*"/>
+                                                            <RowDefinition Height="*"/>
+                                                        </Grid.RowDefinitions>
+                                                        <Label Text="{Binding Title}" FontAttributes="Bold" Margin="0,10,0,0" Grid.Row="0" TextColor="{StaticResource NavigationPrimary}" FontSize="20" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+
+                                                        <Label Text="{Binding SubHeading}" VerticalOptions="Center" Grid.Row="1" TextColor="Black" FontSize="15" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+
+                                                        <Label Text="{Binding Description}" VerticalOptions="Center" Grid.Row="2" TextColor="Gray" FontSize="12" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+                                                    </Grid>
+                                                </Grid>
+                                            </Frame>
+                                      
+                                        </Grid>
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+
+    </ContentPage.Content>
+</ContentPage>

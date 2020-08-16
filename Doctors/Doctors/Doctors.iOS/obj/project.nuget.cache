@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "bOgK06FoW+Q1qm/6FVnZLKJjw0q8OPp3QloMmmci9nzIqTMXnc61GtWMgzHxWBuUoGcxvqEVJJSQJH0lMRQvPA==",
+  "success": true,
+  "projectFilePath": "/Users/macbookproa1398/Downloads/Doctors/Doctors/Doctors.iOS/Doctors.iOS.csproj",
+  "expectedPackageFiles": [
+    "/Users/macbookproa1398/.nuget/packages/com.airbnb.ios.lottie/2.5.8/com.airbnb.ios.lottie.2.5.8.nupkg.sha512",
+    "/Users/macbookproa1398/.nuget/packages/com.airbnb.xamarin.forms.lottie/3.0.0/com.airbnb.xamarin.forms.lottie.3.0.0.nupkg.sha512",
+    "/Users/macbookproa1398/.nuget/packages/syncfusion.licensing/18.2.0.48/syncfusion.licensing.18.2.0.48.nupkg.sha512",
+    "/Users/macbookproa1398/.nuget/packages/syncfusion.xamarin.core/18.2.0.48/syncfusion.xamarin.core.18.2.0.48.nupkg.sha512",
+    "/Users/macbookproa1398/.nuget/packages/syncfusion.xamarin.sfnavigationdrawer/18.2.0.48/syncfusion.xamarin.sfnavigationdrawer.18.2.0.48.nupkg.sha512",
+    "/Users/macbookproa1398/.nuget/packages/xamarin.essentials/1.5.3.2/xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "/Users/macbookproa1398/.nuget/packages/xamarin.forms/4.8.0.1269/xamarin.forms.4.8.0.1269.nupkg.sha512"
+  ],
+  "logs": []
+}

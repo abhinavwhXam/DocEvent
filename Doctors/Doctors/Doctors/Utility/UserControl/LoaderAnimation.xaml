@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+              xmlns:Loader="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             x:Class="Doctors.Utility.UserControl.LoaderAnimation">
+  <ContentView.Content>
+        <Grid>
+        <Grid BackgroundColor="Black" Opacity=".6">
+
+           
+
+            </Grid>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height=".3*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+            <Frame Padding="0" CornerRadius="20" Margin="40,0,40,0" Grid.Row="1" BackgroundColor="White"  >
+                    <Grid>
+                        <Grid Padding="0" RowSpacing="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <!--<Loader:AnimationView x:Name="AnimationView"
+                         Animation="HeartLoader.json"
+                         Loop="True"
+                         AutoPlay="True"
+                               Grid.Column="0"
+                               Duration="5"
+                         VerticalOptions="Center"
+                         HorizontalOptions="Center">
+
+
+                            </Loader:AnimationView>-->
+                            <Label x:Name="Messagess"  Grid.Column="1"  TextColor="Black" FontSize="15"  VerticalOptions="Center" HorizontalOptions="Center" />
+                        </Grid>
+                       
+                    </Grid>
+                </Frame>
+
+            </Grid>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

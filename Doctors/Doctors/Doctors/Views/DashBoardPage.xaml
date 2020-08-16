@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+              xmlns:Laoding="clr-namespace:Doctors.Utility.UserControl"
+                xmlns:Loader="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+               xmlns:Entry="clr-namespace:Doctors.Utility.Controls"
+             xmlns:temp ="clr-namespace:Doctors.Views.Templates"
+             BackgroundColor="Red"
+             xmlns:Drawer="clr-namespace:Syncfusion.SfNavigationDrawer.XForms;assembly=Syncfusion.SfNavigationDrawer.XForms"
+             x:Class="Doctors.Views.DashBoardPage"
+             x:Name="Dash">
+    <ContentPage.Content>
+        <Grid>
+             <CollectionView Margin="10,10,10,0"    SelectionMode="None" ItemsSource="{Binding DashBoardListCol,Mode=TwoWay}" VerticalOptions="Start" HorizontalOptions="FillAndExpand">
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid  Margin="10,5,10,5" HeightRequest="180">
+
+                                            <Frame  VerticalOptions="FillAndExpand" Padding="5" Margin="10,5,10,5" BorderColor="LightGray" HorizontalOptions="FillAndExpand">
+                                                
+                                                <Grid>
+                                                    <Grid.GestureRecognizers>
+                                                        <TapGestureRecognizer Command="{Binding Source={x:Reference Dash}, Path=BindingContext.CategoryCOmmand}" CommandParameter="{Binding Title}"/>
+                                                    </Grid.GestureRecognizers>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width=".8*"/>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+                                                <Loader:AnimationView x:Name="AnimationView"
+                                                                      Grid.Column="0"
+                         Animation="{Binding Icon}"
+                         Loop="True"
+                         AutoPlay="True" 
+                              >
+
+
+                                                </Loader:AnimationView>
+                                                    <Grid Grid.Column="1">
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="Auto"/>
+                                                            <RowDefinition Height="*"/>
+                                                            <RowDefinition Height="*"/>
+                                                        </Grid.RowDefinitions>
+                                                        <Label Text="{Binding Title}" FontAttributes="Bold" Margin="0,10,0,0" Grid.Row="0" TextColor="{StaticResource NavigationPrimary}" FontSize="20" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+
+                                                        <Label Text="{Binding SubHeading}" VerticalOptions="Center" Grid.Row="1" TextColor="Black" FontSize="15" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+
+                                                        <Label Text="{Binding Description}" VerticalOptions="Center" Grid.Row="2" TextColor="Gray" FontSize="12" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+                                                    </Grid>
+                                                </Grid>
+                                            </Frame>
+                                      
+                                        </Grid>
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+
+            <Drawer:SfNavigationDrawer IsVisible="false" IsOpen="{Binding DrawerIsOpen,Mode=TwoWay}">
+
+                <Drawer:SfNavigationDrawer.ContentView>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height=".1*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Entry:GradientColorStack Orientation="Vertical" Grid.Row="0" HorizontalOptions="FillAndExpand" VerticalOptions="Start" StartColor="{StaticResource NavigationPrimary}" EndColor="White">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <ImageButton BackgroundColor="Transparent" Command="{Binding HamburgerButtonCOmmand}" Source="menu.png" Margin="10,10" HorizontalOptions="Start" VerticalOptions="Center"/>
+                                <Image Source="Ciplalogo.png" HeightRequest="35" Grid.Column="1" Margin="0,10,10,0" HorizontalOptions="End" VerticalOptions="Center"/>
+                            </Grid>
+                           
+                        </Entry:GradientColorStack>
+                        
+                        <Grid Grid.Row="1" BackgroundColor="White">
+                            <BoxView BackgroundColor="LightGray" HorizontalOptions="FillAndExpand" VerticalOptions="Start" HeightRequest="1.5"/>
+                            <StackLayout IsVisible="False" Orientation="Vertical">
+                                <Frame Padding="0" CornerRadius="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Margin="10,10,10,10">
+                                <Image HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Source="CiplaMed.png"/>
+                                </Frame>
+                                <Frame Padding="0" CornerRadius="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Margin="10,10,10,10">
+                                    <Image HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Source="CiplaMed.png"/>
+                                </Frame>
+                                <Frame Padding="0" CornerRadius="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Margin="10,10,10,10">
+                                    <Image HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Source="Event.jpj"/>
+                                </Frame>
+                            </StackLayout>
+                            <CollectionView Margin="10,10,10,0"    SelectionMode="None" ItemsSource="{Binding DashBoardListCol,Mode=TwoWay}" VerticalOptions="Start" HorizontalOptions="FillAndExpand">
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid  Margin="10,5,10,5" HeightRequest="180">
+
+                                            <Frame  VerticalOptions="FillAndExpand" Padding="5" Margin="10,5,10,5" BorderColor="LightGray" HorizontalOptions="FillAndExpand">
+                                                
+                                                <Grid>
+                                                    <Grid.GestureRecognizers>
+                                                        <TapGestureRecognizer Command="{Binding Source={x:Reference Dash}, Path=BindingContext.CategoryCOmmand}" CommandParameter="{Binding Title}"/>
+                                                    </Grid.GestureRecognizers>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width=".8*"/>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+                                                <Loader:AnimationView x:Name="AnimationView"
+                                                                      Grid.Column="0"
+                         Animation="{Binding Icon}"
+                         Loop="True"
+                         AutoPlay="True" 
+                              >
+
+
+                                                </Loader:AnimationView>
+                                                    <Grid Grid.Column="1">
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="Auto"/>
+                                                            <RowDefinition Height="*"/>
+                                                            <RowDefinition Height="*"/>
+                                                        </Grid.RowDefinitions>
+                                                        <Label Text="{Binding Title}" FontAttributes="Bold" Margin="0,10,0,0" Grid.Row="0" TextColor="{StaticResource NavigationPrimary}" FontSize="20" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+
+                                                        <Label Text="{Binding SubHeading}" VerticalOptions="Center" Grid.Row="1" TextColor="Black" FontSize="15" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+
+                                                        <Label Text="{Binding Description}" VerticalOptions="Center" Grid.Row="2" TextColor="Gray" FontSize="12" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+                                                    </Grid>
+                                                </Grid>
+                                            </Frame>
+                                      
+                                        </Grid>
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+
+
+                        </Grid>
+                    </Grid>
+                </Drawer:SfNavigationDrawer.ContentView>
+                <Drawer:SfNavigationDrawer.DrawerContentView >
+                    <Grid BackgroundColor="White" Margin="0,20,0,0">
+                        <StackLayout IsVisible="False">
+                            <Grid HeightRequest="30"  Margin="0,10,0,0" HorizontalOptions="FillAndExpand">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="HomeIcon.png" VerticalOptions="Center" Margin="10,0,0,0"  HorizontalOptions="Start" Grid.Column="0"/>
+                                <Label Text="Home" TextColor="Black" FontSize="16" Margin="10,0,0,0"  HorizontalOptions="Start" Grid.Column="1" VerticalOptions="Center"/>
+                            </Grid>
+                            <Grid>
+                               
+                                <Grid HeightRequest="30" BackgroundColor="Red" Margin="0,10,0,0" HorizontalOptions="Start">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="AccountIcon.png" VerticalOptions="Center" Margin="10,0,0,0"  HorizontalOptions="Start" Grid.Column="0"/>
+                                <Label Text="Account" TextColor="Black" FontSize="16" Margin="10,0,0,0"  HorizontalOptions="Start" Grid.Column="1" VerticalOptions="Center"/>
+                            </Grid>
+                              
+                            </Grid>
+                            <Grid HeightRequest="30"  Margin="0,10,0,0" HorizontalOptions="FillAndExpand">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="EventIcon.png" VerticalOptions="Center" Margin="10,0,0,0"  HorizontalOptions="Start" Grid.Column="0"/>
+                                <Label Text="Event" TextColor="Black" Margin="10,0,0,0" FontSize="16" HorizontalOptions="Start" Grid.Column="1" VerticalOptions="Center"/>
+                            </Grid>
+                        </StackLayout>
+
+                        <ListView SeparatorVisibility="None"  SelectionMode="None"  ItemsSource="{Binding MenuListCollection,Mode=TwoWay}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <Grid  Margin="0,10,0,10" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image Source="{Binding Icon}" VerticalOptions="Center" Margin="10,0,0,0"  HorizontalOptions="Start" Grid.Column="0"/>
+                                        <Label Text="{Binding Title}" TextColor="Black" FontSize="16" Margin="10,0,0,0"  HorizontalOptions="Start" Grid.Column="1" VerticalOptions="Center"/>
+                                    </Grid>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                        
+                        
+                        
+                    </Grid>
+                </Drawer:SfNavigationDrawer.DrawerContentView>
+                <Drawer:SfNavigationDrawer.DrawerHeaderView>
+                    <Grid>
+                        <temp:HamburgerHeaderView/>
+                    </Grid>
+                </Drawer:SfNavigationDrawer.DrawerHeaderView>
+                <Drawer:SfNavigationDrawer.DrawerFooterView>
+                    <Grid BackgroundColor="White">
+                        <StackLayout IsVisible="False">
+                            <BoxView BackgroundColor="Gray" HeightRequest="1" HorizontalOptions="FillAndExpand"/>
+                            <Grid HeightRequest="30"  Margin="0,10,0,0" HorizontalOptions="FillAndExpand">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="PrivacyPolicy.png" VerticalOptions="Center" Margin="10,0,0,0"  HorizontalOptions="Start" Grid.Column="0"/>
+                                <Label Text="Privacy Policy" TextColor="Black" FontSize="16" Margin="10,0,0,0"  HorizontalOptions="Start" Grid.Column="1" VerticalOptions="Center"/>
+                            </Grid>
+                            <Grid HeightRequest="30"  Margin="0,10,0,0" HorizontalOptions="FillAndExpand">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="Logout.png" VerticalOptions="Center" Margin="10,0,0,0"  HorizontalOptions="Start" Grid.Column="0"/>
+                                <Label Text="Log Out" TextColor="Black" FontSize="16" Margin="10,0,0,0"  HorizontalOptions="Start" Grid.Column="1" VerticalOptions="Center"/>
+                            </Grid>
+
+
+                            
+                        </StackLayout>
+                        <BoxView BackgroundColor="Gray" HeightRequest="1" VerticalOptions="Start" HorizontalOptions="FillAndExpand"/>
+
+                        <ListView SeparatorVisibility="None"  SelectionMode="None" Margin="0,5,0,0" ItemsSource="{Binding MenuFooterListCollection,Mode=TwoWay}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <Grid  Margin="0,10,0,10" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Image Source="{Binding Icon}" VerticalOptions="Center" Margin="10,0,0,0"  HorizontalOptions="Start" Grid.Column="0"/>
+                                            <Label Text="{Binding Title}" TextColor="Black" FontSize="16" Margin="10,0,0,0"  HorizontalOptions="Start" Grid.Column="1" VerticalOptions="Center"/>
+                                        </Grid>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+
+                    </Grid>
+                </Drawer:SfNavigationDrawer.DrawerFooterView>
+            </Drawer:SfNavigationDrawer>
+            <Laoding:LoaderAnimation IsVisible="{Binding IsBusy,Mode=TwoWay}">
+                <x:Arguments>
+                    <x:String>Please wait!</x:String>
+
+                </x:Arguments>
+            </Laoding:LoaderAnimation>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

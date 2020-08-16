@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       x:Class="Doctors.NewShell"
+       Shell.ForegroundColor="{StaticResource NavigationPrimary}"
+       xmlns:temp ="clr-namespace:Doctors.Views.Templates"
+         xmlns:views="clr-namespace:Doctors.Views">
+   
+   <Shell.TitleView>
+        <StackLayout>
+            <Image Source="xamarin_logo.png" WidthRequest="50" HorizontalOptions="Center"/>
+        </StackLayout>
+    </Shell.TitleView>
+    <Shell.MenuItemTemplate>
+        <DataTemplate>
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.2*" />
+                    <ColumnDefinition Width="0.8*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="{Binding Icon}"
+                       Margin="0,2000,0,0"            
+                       HeightRequest="20" />
+                <Label Grid.Column="1"
+                       Margin="0,2000,0,0"           
+                       Text="{Binding Text}"
+                       FontAttributes="Italic"
+                       VerticalTextAlignment="Center" />
+            </Grid>
+        </DataTemplate>
+    </Shell.MenuItemTemplate>
+    <FlyoutItem Title="Animals"
+                FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent  Title="Monkeys" ContentTemplate="{DataTemplate views:ItemsPage}" />
+        <ShellContent Title="Elephants" ContentTemplate="{DataTemplate views:AboutPage}" />
+        <ShellContent Title="Bears" ContentTemplate="{DataTemplate views:ItemDetailPage}"  />
+
+    </FlyoutItem>
+    <MenuItem Text="Help"
+        
+          Command="{Binding HelpCommand}"
+          />
+   
+</Shell>
