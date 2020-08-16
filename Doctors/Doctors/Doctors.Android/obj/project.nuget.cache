@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hhyfO81rQczkwhRqbwR0OUlEocCRV5NUobZy0SPhJf+ke/N8OielhyC1ZdskSdeuw9j/EdmSmmaAJrxdtp8nrw==",
+  "dgSpecHash": "ipIHys0wSudoV+wvmu4x3V8SsmJPlI20+LfI/b6L+7HqCoyywcU9Cu0dPm0G39v2YxeLkidqJAH2BK8/A/n5/A==",
   "success": true,
-  "projectFilePath": "/Users/macbookproa1398/Downloads/Doctors/Doctors/Doctors.Android/Doctors.Android.csproj",
+  "projectFilePath": "/Users/macbookproa1398/DocEvent/Doctors/Doctors/Doctors.Android/Doctors.Android.csproj",
   "expectedPackageFiles": [
     "/Users/macbookproa1398/.nuget/packages/com.airbnb.android.lottie/3.0.3/com.airbnb.android.lottie.3.0.3.nupkg.sha512",
     "/Users/macbookproa1398/.nuget/packages/com.airbnb.xamarin.forms.lottie/3.0.0/com.airbnb.xamarin.forms.lottie.3.0.0.nupkg.sha512",

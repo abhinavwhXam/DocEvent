@@ -1,6 +1,6 @@
-/Users/macbookproa1398/Downloads/Doctors/Doctors/Doctors.iOS/bin/iPhoneSimulator/Debug/Doctors.iOS.exe
+/Users/macbookproa1398/DocEvent/Doctors/Doctors/Doctors.iOS/bin/iPhoneSimulator/Debug/Doctors.iOS.exe
 /Library/Frameworks/Xamarin.iOS.framework/Versions/13.20.2.2/lib/mono/Xamarin.iOS/mscorlib.dll
-/Users/macbookproa1398/Downloads/Doctors/Doctors/Doctors/bin/Debug/netstandard2.0/Doctors.dll
+/Users/macbookproa1398/DocEvent/Doctors/Doctors/Doctors/bin/Debug/netstandard2.0/Doctors.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/13.20.2.2/lib/mono/Xamarin.iOS/Facades/netstandard.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/13.20.2.2/lib/mono/Xamarin.iOS/System.Core.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/13.20.2.2/lib/mono/Xamarin.iOS/System.dll

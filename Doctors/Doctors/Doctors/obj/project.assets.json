@@ -800,11 +800,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/macbookproa1398/Downloads/Doctors/Doctors/Doctors/Doctors.csproj",
+      "projectUniqueName": "/Users/macbookproa1398/DocEvent/Doctors/Doctors/Doctors/Doctors.csproj",
       "projectName": "Doctors",
-      "projectPath": "/Users/macbookproa1398/Downloads/Doctors/Doctors/Doctors/Doctors.csproj",
+      "projectPath": "/Users/macbookproa1398/DocEvent/Doctors/Doctors/Doctors/Doctors.csproj",
       "packagesPath": "/Users/macbookproa1398/.nuget/packages/",
-      "outputPath": "/Users/macbookproa1398/Downloads/Doctors/Doctors/Doctors/obj/",
+      "outputPath": "/Users/macbookproa1398/DocEvent/Doctors/Doctors/Doctors/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/macbookproa1398/.config/NuGet/NuGet.Config"

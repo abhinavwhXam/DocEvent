@@ -1,45 +1,45 @@
 ﻿<Properties StartupConfiguration="{D0675463-53BE-4C66-A0DC-1940C30A884F}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Doctors/Doctors/Views/Registeration/PasswordLoginPage.xaml">
+  <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="Doctors/Doctors/Views/Registeration/LoginPage.xaml.cs" Line="20" Column="44" />
-      <File FileName="Doctors/Doctors/ViewModels/LoginViewModel.cs" Line="25" Column="1" />
-      <File FileName="Doctors/Doctors/App.xaml.cs" Line="18" Column="44" />
-      <File FileName="Doctors/Doctors/Views/SplashScreenPage.xaml.cs" Line="34" Column="57" />
-      <File FileName="Doctors/Doctors/Views/Registeration/LoginPage.xaml" Line="14" Column="71" />
-      <File FileName="Doctors/Doctors/Views/Registeration/PasswordLoginPage.xaml" Line="21" Column="54" />
-      <File FileName="Doctors/Doctors/Views/DashBoardPage.xaml" Line="170" Column="63" />
+      <File FileName="Doctors/Doctors/ViewModels/LoginViewModel.cs" />
+      <File FileName="Doctors/Doctors/App.xaml.cs" />
+      <File FileName="Doctors/Doctors/Views/SplashScreenPage.xaml.cs" />
+      <File FileName="Doctors/Doctors/Views/Registeration/LoginPage.xaml" />
+      <File FileName="Doctors/Doctors/Views/Registeration/PasswordLoginPage.xaml" Line="18" Column="1" />
+      <File FileName="Doctors/Doctors/Views/DashBoardPage.xaml" />
       <File FileName="Doctors/Doctors/Views/DashBoardPage.xaml.cs" />
-      <File FileName="Doctors/Doctors.Android/MainActivity.cs" Line="28" Column="1" />
+      <File FileName="Doctors/Doctors.Android/MainActivity.cs" />
       <File FileName="Doctors/Doctors.iOS/AppDelegate.cs" />
       <File FileName="Doctors/Doctors/Views/Templates/HamburgerHeaderView.xaml" />
-      <File FileName="Doctors/Doctors/Views/Registeration/PasswordLoginPage.xaml.cs" Line="20" Column="53" />
-      <File FileName="Doctors/Doctors/ViewModels/PasswordLoginPageViewModel.cs" Line="28" Column="19" />
+      <File FileName="Doctors/Doctors/Views/Registeration/PasswordLoginPage.xaml.cs" />
+      <File FileName="Doctors/Doctors/ViewModels/PasswordLoginPageViewModel.cs" />
       <File FileName="Doctors/Doctors/ViewModels/DashBoaardViewModels.cs" />
-      <File FileName="Doctors/Doctors/AppShell.xaml" Line="15" Column="33" />
-      <File FileName="Doctors/Doctors/AppShell.xaml.cs" Line="8" Column="34" />
+      <File FileName="Doctors/Doctors/AppShell.xaml" />
+      <File FileName="Doctors/Doctors/AppShell.xaml.cs" />
       <File FileName="Doctors/Doctors/Views/NewItemPage.xaml" />
-      <File FileName="Doctors/Doctors/Views/MyPage.xaml" Line="8" Column="82" />
-      <File FileName="Doctors/Doctors/Views/MyPage.xaml.cs" Line="14" Column="57" />
-      <File FileName="../../.nuget/packages/com.airbnb.xamarin.forms.lottie/3.1.2/readme.txt" Line="1" Column="1" />
+      <File FileName="Doctors/Doctors/Views/MyPage.xaml" />
+      <File FileName="Doctors/Doctors/Views/MyPage.xaml.cs" />
+      <File FileName="../../.nuget/packages/com.airbnb.xamarin.forms.lottie/3.1.2/readme.txt" />
       <File FileName="../../.nuget/packages/com.airbnb.xamarin.forms.lottie/2.6.1/readme.txt" />
       <File FileName="Doctors/Doctors/Views/ItemDetailPage.xaml" />
-      <File FileName="Doctors/Doctors/App.xaml" Line="9" Column="40" />
+      <File FileName="Doctors/Doctors/App.xaml" />
       <File FileName="Doctors/Doctors/Views/NewItemPage.xaml.cs" />
-      <File FileName="Doctors/Doctors/Views/ItemsPage.xaml" Line="10" Column="27" />
+      <File FileName="Doctors/Doctors/Views/ItemsPage.xaml" />
       <File FileName="../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/iOS/Xamarin.iOS.Common.targets" />
       <File FileName="Doctors/Doctors/Views/AboutPage.xaml" />
-      <File FileName="Doctors/Doctors/NewShell.xaml" Line="5" Column="65" />
-      <File FileName="Doctors/Doctors/NewShell.xaml.cs" Line="10" Column="16" />
+      <File FileName="Doctors/Doctors/NewShell.xaml" />
+      <File FileName="Doctors/Doctors/NewShell.xaml.cs" />
       <File FileName="Doctors/Doctors/Views/MyPage2.xaml" />
       <File FileName="Doctors/Doctors/Views/MyPage2.xaml.cs" />
-      <File FileName="Doctors/Doctors/Views/ItemsPage.xaml.cs" Line="27" Column="13" />
-      <File FileName="../../.nuget/packages/com.airbnb.xamarin.forms.lottie/3.0.0/readme.txt" Line="1" Column="1" />
-      <File FileName="Doctors/Doctors/Views/AccountView.xaml" Line="69" Column="1" />
-      <File FileName="Doctors/Doctors/Views/AccountView.xaml.cs" Line="1" Column="1" />
-      <File FileName="Doctors/Doctors/Models/LoginModel.cs" Line="16" Column="44" />
-      <File FileName="Doctors/Doctors/Utility/UserControl/LoaderAnimation.xaml" Line="27" Column="62" />
-      <File FileName="Doctors/Doctors.Android/CustomRenderes/MyEntryRenderer.cs" Line="1" Column="1" />
-      <File FileName="Doctors/Doctors.iOS/CustomRenderer/MyEntryRenderer.cs" Line="23" Column="7" />
+      <File FileName="Doctors/Doctors/Views/ItemsPage.xaml.cs" />
+      <File FileName="../../.nuget/packages/com.airbnb.xamarin.forms.lottie/3.0.0/readme.txt" />
+      <File FileName="Doctors/Doctors/Views/AccountView.xaml" />
+      <File FileName="Doctors/Doctors/Views/AccountView.xaml.cs" />
+      <File FileName="Doctors/Doctors/Models/LoginModel.cs" />
+      <File FileName="Doctors/Doctors/Utility/UserControl/LoaderAnimation.xaml" />
+      <File FileName="Doctors/Doctors.Android/CustomRenderes/MyEntryRenderer.cs" />
+      <File FileName="Doctors/Doctors.iOS/CustomRenderer/MyEntryRenderer.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -74,7 +74,6 @@
               <Node name="NewShell.xaml" expanded="True" />
             </Node>
             <Node name="Doctors.Android" expanded="True">
-              <Node name="Packages" expanded="True" />
               <Node name="CustomRenderes" expanded="True" />
               <Node name="Resources" expanded="True" />
             </Node>

@@ -2143,11 +2143,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/macbookproa1398/Downloads/Doctors/Doctors/Doctors.Android/Doctors.Android.csproj",
+      "projectUniqueName": "/Users/macbookproa1398/DocEvent/Doctors/Doctors/Doctors.Android/Doctors.Android.csproj",
       "projectName": "Doctors.Android",
-      "projectPath": "/Users/macbookproa1398/Downloads/Doctors/Doctors/Doctors.Android/Doctors.Android.csproj",
+      "projectPath": "/Users/macbookproa1398/DocEvent/Doctors/Doctors/Doctors.Android/Doctors.Android.csproj",
       "packagesPath": "/Users/macbookproa1398/.nuget/packages/",
-      "outputPath": "/Users/macbookproa1398/Downloads/Doctors/Doctors/Doctors.Android/obj/",
+      "outputPath": "/Users/macbookproa1398/DocEvent/Doctors/Doctors/Doctors.Android/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -2162,8 +2162,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "/Users/macbookproa1398/Downloads/Doctors/Doctors/Doctors/Doctors.csproj": {
-              "projectPath": "/Users/macbookproa1398/Downloads/Doctors/Doctors/Doctors/Doctors.csproj"
+            "/Users/macbookproa1398/DocEvent/Doctors/Doctors/Doctors/Doctors.csproj": {
+              "projectPath": "/Users/macbookproa1398/DocEvent/Doctors/Doctors/Doctors/Doctors.csproj"
             }
           }
         }

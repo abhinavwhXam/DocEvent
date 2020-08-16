@@ -1383,11 +1383,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/macbookproa1398/Downloads/Doctors/Doctors/Doctors.iOS/Doctors.iOS.csproj",
+      "projectUniqueName": "/Users/macbookproa1398/DocEvent/Doctors/Doctors/Doctors.iOS/Doctors.iOS.csproj",
       "projectName": "Doctors.iOS",
-      "projectPath": "/Users/macbookproa1398/Downloads/Doctors/Doctors/Doctors.iOS/Doctors.iOS.csproj",
+      "projectPath": "/Users/macbookproa1398/DocEvent/Doctors/Doctors/Doctors.iOS/Doctors.iOS.csproj",
       "packagesPath": "/Users/macbookproa1398/.nuget/packages/",
-      "outputPath": "/Users/macbookproa1398/Downloads/Doctors/Doctors/Doctors.iOS/obj/",
+      "outputPath": "/Users/macbookproa1398/DocEvent/Doctors/Doctors/Doctors.iOS/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1402,8 +1402,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/macbookproa1398/Downloads/Doctors/Doctors/Doctors/Doctors.csproj": {
-              "projectPath": "/Users/macbookproa1398/Downloads/Doctors/Doctors/Doctors/Doctors.csproj"
+            "/Users/macbookproa1398/DocEvent/Doctors/Doctors/Doctors/Doctors.csproj": {
+              "projectPath": "/Users/macbookproa1398/DocEvent/Doctors/Doctors/Doctors/Doctors.csproj"
             }
           }
         }
